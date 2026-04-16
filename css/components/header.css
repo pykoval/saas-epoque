@@ -17,11 +17,24 @@ header.header {
         align-items: center;
         gap: 48px;
 
+        height: 21px;
+        overflow: hidden;
+
         .nav-link {
+            display: flex;
+            flex-direction: column;
+
             font-size: 14px;
             color: var(--primary-white);
             text-decoration: none;
             text-transform: uppercase;
+
+            transform: translateY(25%);
+            transition: transform .2s;
+
+            &:hover {
+                transform: translateY(-25%);
+            }
         }
     }
 
