@@ -1,0 +1,68 @@
+.btn-secondary {
+    display: flex;
+
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    .text {
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 160px;
+
+        background: var(--secondary-dark-gray);
+        color: var(--primary-white);
+        border-radius: 40px;
+
+        line-height: 1.5;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out, z-index 0s;
+    }
+
+    .icon-wrapper {
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        background: var(--primary-blue);
+
+        transition: all .3s ease-in-out, z-index 0s;
+
+        .icon, .icon path {
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    &:hover {
+        .text {
+            transform: translateX(48px);
+            background: var(--primary-blue);
+            z-index: 2;
+        }
+
+        .icon-wrapper {
+            transform: translateX(-160px);
+            background-color: var(--primary-white);
+            z-index: 1;
+
+            .icon {
+                transform: rotate(-45deg);
+
+                path {
+                    fill: var(--primary-blue);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+:root {
+    --primary-black: #0B0B0B;
+    --primary-camel: #BC9765;
+    --primary-blue: #506DE2;
+    --primary-white: #FFFFFF;
+
+    --secondary-dark-gray: #282828;
+    --secondary-gray-1: #3D3D42;
+    --secondary-gray-2: #7A7A7A;
+    --secondary-light-gray: #EBEBEB;
+
+    --state-error: #FF7C7C;
+    --state-success: #58BD7D;
+}

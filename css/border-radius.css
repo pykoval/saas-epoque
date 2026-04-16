@@ -1,0 +1,14 @@
+:root {
+    --radius-external: 24px;
+    --radius-internal: 20px;
+}
+
+@media (width <= 1440px) {
+    --radius-external: 20px;
+    --radius-internal: 16px;
+}
+
+@media (width <= 375px) {
+    --radius-external: 16px;
+    --radius-internal: 8px;
+}
