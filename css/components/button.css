@@ -1,10 +1,6 @@
 .btn-secondary {
     display: flex;
 
-    border: none;
-    background: none;
-    cursor: pointer;
-
     .text {
         position: relative;
         z-index: 1;
@@ -44,7 +40,7 @@
         }
     }
 
-    &:hover {
+    &:not(.no-hover):hover {
         .text {
             transform: translateX(48px);
             background: var(--primary-blue);
@@ -63,6 +59,16 @@
                     fill: var(--primary-blue);
                 }
             }
+        }
+    }
+}
+
+@media (width <= 1024px) {
+    .btn-secondary {
+        width: 100%;
+
+        .text {
+            flex: 1;
         }
     }
 }

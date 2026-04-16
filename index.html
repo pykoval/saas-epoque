@@ -25,7 +25,7 @@
   <div class="container">
 
       <header class="header">
-          <a href="#"><img src="icons/logo.svg" alt="Epoque" class="logo"></a>
+          <a href="#" class="logo"></a>
 
           <nav class="nav">
               <a href="#" class="nav-link">
@@ -54,9 +54,40 @@
                   </svg>
               </span>
           </button>
+
+          <button class="menu-btn-mobile">
+              <svg class="menu-btn-icon menu" width="48" height="12" viewBox="0 0 48 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 2H48V0H0V2Z" fill="#0B0B0B"/>
+                  <path d="M0 12H48V10H0V12Z" fill="#0B0B0B"/>
+              </svg>
+
+              <svg class="menu-btn-icon close" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 13.0602L17.4688 18.5308L18.5308 17.4703L13.0603 11.9998L18.5308 6.53075L17.4703 5.46875L11.9998 10.9393L6.53084 5.46875L5.47034 6.53075L10.9393 11.9998L5.47034 17.4688L6.53084 18.5308L11.9998 13.0602Z" fill="#0B0B0B"/>
+              </svg>
+          </button>
+
+          <div class="mobile-menu">
+              <nav class="nav-mobile">
+                  <a href="#" class="nav-mobile-link">Features</a>
+                  <a href="#" class="nav-mobile-link">Priсing</a>
+                  <a href="#" class="nav-mobile-link">FAQ</a>
+                  <a href="#" class="nav-mobile-link">Downloads</a>
+              </nav>
+
+              <button class="btn-secondary mobile no-hover">
+                  <span class="text">Get started</span>
+                  <span class="icon-wrapper">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2888 16.1768L6.30811 7.34848L7.28955 6.3501L16.2703 15.1784L16.2065 6.85665L17.6008 6.84471L17.6924 17.558L6.97913 17.6497L6.9672 16.2555L15.2888 16.1768Z" fill="#fff"/>
+                  </svg>
+              </span>
+              </button>
+          </div>
       </header>
 
   </div>
+
+<script src="js/script.js" type="module"></script>
 </body>
 
 </html>

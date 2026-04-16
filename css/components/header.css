@@ -10,6 +10,7 @@ header.header {
     .logo {
         width: 159px;
         height: 31px;
+        background: url("/icons/logo/logo.svg");
     }
 
     .nav {
@@ -40,5 +41,92 @@ header.header {
 
     .btn-secondary {
         margin-left: auto;
+    }
+
+    .menu-btn-mobile {
+        display: none;
+
+        svg path {
+            fill: var(--primary-white);
+        }
+
+        .menu-btn-icon {
+            &.menu {
+                display: block;
+            }
+            &.close {
+                display: none;
+            }
+        }
+
+        &.active {
+            .menu-btn-icon {
+                &.menu {
+                    display: none;
+                }
+                &.close {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        position: fixed;
+        display: none;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 64px);
+        padding: 40px 16px;
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .nav-mobile-link {
+                font-size: 28px;
+                line-height: 1.2;
+                color: var(--primary-white);
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                transform: translateY(25%);
+                transition: transform .2s;
+            }
+        }
+    }
+}
+
+@media (width <= 1024px) {
+    header.header {
+        position: fixed;
+        left: 0;
+        justify-content: space-between;
+        height: 64px;
+        padding: 0 16px;
+
+        .logo {
+            background: url("/icons/logo/logo-small.svg") no-repeat;
+        }
+
+        .nav, .btn-secondary:not(.mobile) {
+            display: none;
+        }
+
+        .menu-btn-mobile {
+            display: block;
+        }
+
+        .btn-secondary {
+            margin-top: auto;
+        }
     }
 }

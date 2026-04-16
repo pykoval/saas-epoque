@@ -126,7 +126,7 @@
     }
 }
 
-@media (width <= 375px) {
+@media (width <= 1024px) {
     .heading-1 {
         font-size: 46px;
         font-weight: 800;
